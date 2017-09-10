@@ -1,0 +1,24 @@
+{
+  "name": "@anontown/api-types",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anontown/api-types.git"
+  },
+  "keywords": [
+    "anontown",
+    "api"
+  ],
+  "author": "kgtkr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anontown/api-types/issues"
+  },
+  "homepage": "https://github.com/anontown/api-types#readme",
+  "devDependencies": {}
+}
