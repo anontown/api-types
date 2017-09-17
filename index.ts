@@ -12,7 +12,7 @@ export interface History {
     topic: string;
     title: string;
     tags: string[];
-    text: string;
+    body: string;
     date: string;
     hash: string;
 }
@@ -36,7 +36,7 @@ export interface ResBase<T extends ResType> {
 
 export interface ResNormal extends ResBase<'normal'> {
     name: string | null;
-    text: string;
+    body: string;
     reply: string | null;
     profile: string | null;
     isReply: boolean | null;
@@ -64,7 +64,7 @@ export interface Profile {
     id: string;
     user: string | null;
     name: string;
-    text: string;
+    body: string;
     date: string;
     update: string;
     sn: string;
@@ -82,12 +82,12 @@ export interface TopicBase<T extends TopicType> {
 
 export interface TopicNormal extends TopicBase<'normal'> {
     tags: string[];
-    text: string;
+    body: string;
 }
 
 export interface TopicOne extends TopicBase<'one'> {
     tags: string[];
-    text: string;
+    body: string;
 }
 
 export interface TopicFork extends TopicBase<'fork'> {
@@ -99,7 +99,7 @@ export type Topic = TopicOne | TopicNormal | TopicFork;
 export interface Msg {
     id: string;
     receiver: string | null;
-    text: string;
+    body: string;
     date: string;
 }
 
